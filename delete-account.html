@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Удаление аккаунта и данных — Thaity</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; background: #f6f2e9; color: #232830; font: 17px/1.55 -apple-system, system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; line-height: 1.25; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .meta { color: #5b6270; font-size: 15px; margin-bottom: 24px; }
+  .box { background: #fff; border-radius: 16px; padding: 16px 20px; margin-bottom: 12px; }
+  .box ol { margin: 0; padding-left: 22px; }
+  a { color: #34518f; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #12151c; color: #eef0f4; } .meta { color: #a3a9b5; } .box { background: #1b1e26; } a { color: #8fb0ff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Удаление аккаунта и данных Thaity</h1>
+  <p class="meta">Приложение Thaity (iPhone — App Store, Android — Google Play, <code>com.thaity.android</code>). Разработчик — Semenchenko Pavlo.</p>
+
+  <h2>Способ 1. В приложении — сразу</h2>
+  <div class="box">
+    <ol>
+      <li>Откройте Thaity → вкладка «Настройки».</li>
+      <li>Нажмите «Удалить профиль» и подтвердите. Если вход был давно, приложение попросит пароль или вход через Google.</li>
+    </ol>
+  </div>
+  <p>Аккаунт и все данные удаляются сразу, без срока ожидания.</p>
+
+  <h2>Способ 2. Запрос без приложения</h2>
+  <p>Если приложения нет на устройстве или нет доступа к аккаунту, напишите разработчику через контакт в карточке приложения Thaity в Google Play или App Store
+     с темой «Удаление аккаунта Thaity» с адреса, на который зарегистрирован аккаунт (для входа через Google — с адреса этого Google-аккаунта).
+     Мы удалим аккаунт и данные так же полностью, как это делает приложение, сразу после того, как убедимся, что запрос пришёл от владельца аккаунта, и ответим, когда всё будет готово — не позднее чем через 30 дней.</p>
+
+  <h2>Что будет удалено</h2>
+  <ul>
+    <li>Аккаунт (email, имя, фото профиля Google, идентификатор пользователя) в Firebase Authentication.</li>
+    <li>История практик (дата и длительность) в облаке аккаунта (Cloud Firestore).</li>
+    <li>При удалении из приложения — также локальный профиль, фото профиля и настройки на устройстве.</li>
+  </ul>
+
+  <h2>Что может сохраниться</h2>
+  <p>Мы не храним копий этих данных и не ведём собственных резервных копий. Технические журналы Google (Firebase) обрабатываются по политике Google
+     и не содержат истории практик. Данные без регистрации («Гость») хранятся только на вашем устройстве и удаляются вместе с приложением.
+     Заявку ментору (имя, телефон, почта) можно попросить удалить тем же способом.</p>
+
+  <p><a href="privacy.html">Политика конфиденциальности</a></p>
+</main>
+</body>
+</html>
